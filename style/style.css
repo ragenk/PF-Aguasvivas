@@ -20,6 +20,47 @@ html {
 }
 
 /* ------------------ Header ------------------ */
+
+.navbar {
+    background-color: #0c0e0c;
+    z-index: 9999;
+}
+
+.navbar-brand {
+    color: #d8323c;
+}
+
+.navbar > a:focus, a:visited, a:link {
+    color: #d8323c;
+    transition: all 0.3s ease 0s;
+}
+
+.nav-link > a:active, a:hover {
+    color: white !important;
+    font-weight: 700 !important;
+}
+
+.navbar-toggler-icon {
+    width: 24px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 1px;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+    transform: rotate(45deg);
+  }
+  
+  .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::after {
+    transform: translate(-2px, -2px) rotate(-90deg);
+  }
+  
+  .navbar-dark .navbar-toggler-icon {
+    background-color: #fff;
+  }
+
+
 /* nav {
     display: flex;
     justify-content: space-evenly;
