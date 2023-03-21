@@ -5,7 +5,7 @@ Paleta de colores
 --------
 #0c0e0c     -- Negro
 #d8323c     -- Rojo
-white     -- Blanco
+#fff     -- Blanco
 */
 
 /* ------------------ Global Settings ------------------ */
@@ -31,13 +31,13 @@ html {
     color: #d8323c;
 }
 
-.navbar > a:focus, a:visited, a:link {
+.nav-link > .nav-link:focus, .nav-link:visited, .nav-link:link {
     color: #d8323c;
     transition: all 0.3s ease 0s;
 }
 
-.nav-link > a:active, a:hover {
-    color: white !important;
+.nav-link > .nav-link:active, .nav-link:hover {
+    color: #fff !important;
     font-weight: 700 !important;
 }
 
@@ -58,7 +58,7 @@ body {
     box-sizing: border-box;
     position: relative;
     background-color: #0c0e0c;
-    min-height: 90vh;
+    min-height: 100vh;
 }
 
 /* ------------------ Sections ------------------ */
@@ -72,24 +72,15 @@ section, article {
 
 .black-bg {
     background-color: #0c0e0c;
-    color:white;
+    color:#fff;
 }
 
 .white-bg {
-    background-color: white;
+    background-color: #fff;
     color: #0c0e0c;
 }
 
 /* ------------------ Content ------------------ */
-/* h1 {
-    font-weight: 700;
-    font-size: 50px;
-} */
-
-h2 {
-    font-weight: 700;
-    font-size: 40px;
-}
 
 .img-fluid {
     border: 5px solid #d8323c;
@@ -98,17 +89,14 @@ h2 {
     border-radius: 2%;
 }
 
-.section-img {
-    width: 30%;
-    border: 5px solid #d8323c;
-    border-top: 0;
-    border-right: 0;
-    border-radius: 2%;
+.btn-primary {
+    background-color:#d8323c;    
+    color: #fff;
+    border: 0;
 }
 
-.section-div {
-    display: inline-block;
-    text-align: center;
-    width: 60%;
-    margin: 0 40px;
+.btn-primary:hover {
+    background-color: #d8323c;
+    opacity: 0.8;
 }
+
