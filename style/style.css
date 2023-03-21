@@ -91,6 +91,13 @@ h2 {
     font-size: 40px;
 }
 
+.img-fluid {
+    border: 5px solid #d8323c;
+    border-top: 0;
+    border-right: 0;
+    border-radius: 2%;
+}
+
 .section-img {
     width: 30%;
     border: 5px solid #d8323c;
