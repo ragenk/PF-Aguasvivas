@@ -4,25 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- My style sheet -->
     <link rel="stylesheet" href="../style/style.css">
     <title>Jairolart - Portafolio</title>
 </head>
 <body>
-        
-    <div class="global-div">
-        <header>
-            <nav>
-                <p class="logo">JAIROLART</p>
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="./galeria.html">Galeria</a></li>
-                    <li><a class="current-page" href="./portafolio.html">Portafolio</a></li>
-                    <li><a href="./acercade.html">Acerca de mi</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
 
+    <!-- Navbar using Bootstrap 5.0 -->
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold fs-5 ps-lg-5" href="../index.html">JAIROLART</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto me-5">
+                        <li class="nav-item pe-3">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item pe-3">
+                            <a class="nav-link" href="./galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item pe-3">
+                            <a class="nav-link active fw-bold text-light" aria-current="page" href="#">Portafolio</a>
+                        </li>
+                        <li class="nav-item pe-3">
+                            <a class="nav-link" href="./acercade.html">Acerca de mi</a>
+                        </li>
+                        <li class="nav-item pe-3">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
     <main>
         <section>
@@ -31,17 +50,22 @@
         </section>
     </main>
 
-    <article></article>
+    <!-- Footer Section -->
+    <footer class="black-bg">
+        <div class="container-fluid py-2">
+            <div class="row align-items-center">
+                <div class="col-sm-12 col-md-6 text-center text-md-start mb-3 mb-md-0  ps-lg-5">
+                    <p class="m-0">Copyright &copy; 2023 Todos los derechos reservados por Rafael Aguasvivas</p>
+                </div>
+                <div class="col-sm-12 col-md-6 text-center text-md-end pe-lg-5">
+                    <a href="https://www.tiktok.com/@jairolart" target="_blank"><img src="../img/icono-tik-tok.svg" alt="icono de tiktok"></a>
+                    <a href="https://www.instagram.com/jairolart/" target="_blank"><img src="../img/icono-instagram.svg" alt="instagram icon"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-
-        <footer>
-            <p class="footer-text">Copyright &copy; 2023 Todos los derechos reservados por Rafael Aguasvivas</p>
-            <div class="footer-div">            
-                <a href="https://www.tiktok.com/@jairolart" target="_blank"><img src="../img/icono-tik-tok.svg" alt="icono de tiktok"></a>            
-                <a href="https://www.instagram.com/jairolart/" target="_blank"><img src="../img/icono-instagram.svg" alt="instagram icon"></a>
-            </div>        
-        </footer>
-    </div>
-
+    <!-- Bootsrap Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
