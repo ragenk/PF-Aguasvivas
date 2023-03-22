@@ -5,55 +5,115 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- My style sheet -->
     <link rel="stylesheet" href="../style/style.css">
     <title>Jairolart - Galeria</title>
 </head>
 <body>
-    <header>
 
-        <nav class="navbar navbar-expand-lg navbar-light">
+    <!-- Navbar using Bootstrap 5.0 -->
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container-fluid">
-                <a href="../index.html" class="navbar-brand fw-bold"></a>
-                <ul class="navbar-nav ms-auto me-5">
-                    <li class="navbar-item"><a class="navbar-link" href="../index.html">Inicio</a></li>
-                    <li class="navbar-item"><a class="navbar-link" class="current-page" href="./galeria.html">Galeria</a></li>
-                    <li class="navbar-item"><a class="navbar-link" href="./portafolio.html">Portafolio</a></li>
-                    <li class="navbar-item"><a class="navbar-link" href="./acercade.html">Acerca de mi</a></li>
-                    <li class="navbar-item"><a class="navbar-link" href="./contacto.html">Contacto</a></li>
-                </ul>
+                <a class="navbar-brand fw-bold fs-5 ps-lg-5" href="../index.html">JAIROLART</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto me-5">
+                        <li class="nav-item pe-3">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item pe-3">
+                            <a class="nav-link active fw-bold text-light" aria-current="page" href="#">Galeria</a>
+                        </li>
+                        <li class="nav-item pe-3">
+                            <a class="nav-link" href="./portafolio.html">Portafolio</a>
+                        </li>
+                        <li class="nav-item pe-3">
+                            <a class="nav-link" href="./acercade.html">Acerca de mi</a>
+                        </li>
+                        <li class="nav-item pe-3">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
-        
-        <!-- <nav>
-            <p class="logo">JAIROLART</p>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a class="current-page" href="./galeria.html">Galeria</a></li>
-                <li><a href="./portafolio.html">Portafolio</a></li>
-                <li><a href="./acercade.html">Acerca de mi</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav> -->
     </header>
 
-    <main>
-        <section>
-            <h1></h1>
-            <p></p>
+    <main class="mt-5">
+        <section class="white-bg">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-12">
+                        <h1 class="fw-bold">Galeria</h1>
+                        <p>¡Bienvenidos a mi sección de galería!<br>Aquí podrás encontrar una selección de mis obras más recientes. Cada pieza que verás aquí es el resultado de mi pasión por el arte y mi compromiso con la creatividad y la exploración constante. Espero que disfrutes de esta experiencia visual tanto como yo disfruté creando estas obras.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                    <img
+                    src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+                    class="w-100 shadow-1-strong rounded mb-4"
+                    alt="Boat on Calm Water"
+                    />
+                
+                    <img
+                    src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp"
+                    class="w-100 shadow-1-strong rounded mb-4"
+                    alt="Wintry Mountain Landscape"
+                    />
+                </div>
+                
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <img
+                    src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp"
+                    class="w-100 shadow-1-strong rounded mb-4"
+                    alt="Mountains in the Clouds"
+                    />
+                
+                    <img
+                    src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+                    class="w-100 shadow-1-strong rounded mb-4"
+                    alt="Boat on Calm Water"
+                    />
+                </div>
+                
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <img
+                    src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp"
+                    class="w-100 shadow-1-strong rounded mb-4"
+                    alt="Waves at Sea"
+                    />
+                
+                    <img
+                    src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp"
+                    class="w-100 shadow-1-strong rounded mb-4"
+                    alt="Yosemite National Park"
+                    />
+                </div>
+            </div>
         </section>
     </main>
 
-    <article></article>
-
-    <footer>
-        <p class="footer-text">Copyright &copy; 2023 Todos los derechos reservados por Rafael Aguasvivas</p>
-        <div class="footer-div">            
-            <a href="https://www.tiktok.com/@jairolart" target="_blank"><img src="../img/icono-tik-tok.svg" alt="icono de tiktok"></a>            
-            <a href="https://www.instagram.com/jairolart/" target="_blank"><img src="../img/icono-instagram.svg" alt="instagram icon"></a>
-        </div>        
+    <!-- Footer Section -->
+    <footer class="black-bg">
+        <div class="container-fluid py-2">
+            <div class="row align-items-center">
+                <div class="col-sm-12 col-md-6 text-center text-md-start mb-3 mb-md-0  ps-lg-5">
+                    <p class="m-0">Copyright &copy; 2023 Todos los derechos reservados por Rafael Aguasvivas</p>
+                </div>
+                <div class="col-sm-12 col-md-6 text-center text-md-end pe-lg-5">
+                    <a href="https://www.tiktok.com/@jairolart" target="_blank"><img src="../img/icono-tik-tok.svg" alt="icono de tiktok"></a>
+                    <a href="https://www.instagram.com/jairolart/" target="_blank"><img src="../img/icono-instagram.svg" alt="instagram icon"></a>
+                </div>
+            </div>
+        </div>
     </footer>
+
     <!-- Bootsrap Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
