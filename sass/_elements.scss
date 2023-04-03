@@ -1,0 +1,27 @@
+/* ------------------ Elements ------------------ */
+/* Images */
+.img-fluid {
+    border: 5px solid #d8323c;
+    border-top: 0;
+    border-right: 0;
+    border-radius: 2%;
+}
+
+.rounded:hover {
+    border: 5px solid #d8323c;
+    border-top: 0;
+    border-right: 0;
+    border-radius: 2%;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color:#d8323c !important;
+    color: #fff;
+    border: 0;
+        &:hover {
+            background-color: #d8323c !important;
+            opacity: 0.8;
+        }
+}
