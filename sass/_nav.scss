@@ -1,0 +1,41 @@
+/* ------------------ Header ------------------ */
+
+.navbar {
+    background-color: #0c0e0c;
+    z-index: 9999;
+    .navbar-brand {
+        margin-left: 1rem;
+        color: #d8323c;
+        .navbar-brand > .navbar-brand:active, .navbar-brand:hover {    
+            color: #fff !important;
+            font-weight: 700 !important;
+        }
+    }
+    .navbar-toggler {
+        border-color: #d8323c;
+        .navbar-toggler-icon {
+            width: 24px;
+            height: 3px;
+            background-color: #fff;   
+            border-radius: 2px;
+            transition: all 0.2s ease-in-out;
+        }
+    }
+    .nav-item {
+        padding-right: 1rem;
+        .nav-link {
+            &:focus, &:visited, &:link {
+            color: #d8323c;
+            transition: all 0.3s ease 0s;
+            }
+        }
+        .nav-link {
+            &:active, &:hover {
+            color: #fff !important;
+            font-weight: 700 !important;
+            }
+        }
+    }
+}
+
+
