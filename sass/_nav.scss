@@ -5,18 +5,18 @@
     z-index: 9999;
     .navbar-brand {
         margin-left: 1rem;
-        color: #d8323c;
+        color: $color3;
         .navbar-brand > .navbar-brand:active, .navbar-brand:hover {    
-            color: #fff !important;
+            color: $color2 !important;
             font-weight: 700 !important;
         }
     }
     .navbar-toggler {
-        border-color: #d8323c;
+        border-color: $color3;
         .navbar-toggler-icon {
             width: 24px;
             height: 3px;
-            background-color: #fff;   
+            background-color: $color2;   
             border-radius: 2px;
             transition: all 0.2s ease-in-out;
         }
@@ -25,13 +25,13 @@
         padding-right: 1rem;
         .nav-link {
             &:focus, &:visited, &:link {
-            color: #d8323c;
+            color: $color3;
             transition: all 0.3s ease 0s;
             }
         }
         .nav-link {
             &:active, &:hover {
-            color: #fff !important;
+            color: $color2 !important;
             font-weight: 700 !important;
             }
         }
