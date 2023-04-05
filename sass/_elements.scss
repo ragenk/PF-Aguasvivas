@@ -1,6 +1,6 @@
 /* ------------------ Elements ------------------ */
 /* Images */
-.img-fluid {
+.img-fluid, .card-img-top {
     @include img-border-style;
 }
 
@@ -9,31 +9,46 @@
     transition: all 0.2s ease-in-out;
 }
 
-.bg-overlay {
+.contact-overlay {
     background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("../img/contact-bg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    color: #fff;
-    height: 700px;
-    padding-top: 50px;
+    @include bg-overlay-properties;
+}
+
+.aboutme-overlay {    
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("../img/aboutme-background.jpg");
+    @include bg-overlay-properties;
 }
 
 /* Buttons */
 .btn-primary {
-    @include btns-style;
+    background-color:$color3 !important;
+    border: 0;
+    color: $color2;
         &:hover {
             opacity: 0.8;
         }
 }
 
 .cta {
-    @include btns-style;
+    color: $color2;
     border-radius: 30px;
     border: 2px solid $color2;
+    background-color: $color1;
     &:active, &:hover {
-        background-color: $color2 !important;
+        background-color: $color2;
         color: $color3;
-        border-color: $color3;
+        border: 2px solid $color3;
+    }
+}
+
+.cta-active {
+    color: $color3;
+    border-radius: 30px;
+    border: 2px solid $color3;
+    background-color: $color2;
+    &:active, &:hover {
+        background-color: $color1;
+        color: $color2;
+        border: 2px solid $color2;
     }
 }
