@@ -12,15 +12,18 @@ $color3: #d8323c;
     flex-wrap: wrap;
 }
 
-@mixin img-border-style {    
+@mixin img-border-style {
     border: 5px solid $color3;
     border-top: 0;
     border-right: 0;
     border-radius: 2%;
 }
 
-@mixin btns-style {
-    background-color:$color1 !important;
-    border: 0;
+@mixin bg-overlay-properties {    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
     color: $color2;
+    height: 700px;
+    padding-top: 50px;
 }
