@@ -43,7 +43,7 @@ section, article {
   margin-left: 1rem;
   color: #d8323c;
 }
-.navbar .navbar-brand .navbar-brand > .navbar-brand:active, .navbar .navbar-brand .navbar-brand:hover {
+.navbar .navbar-brand:active, .navbar .navbar-brand:hover {
   color: #fff !important;
   font-weight: 700 !important;
 }
@@ -84,6 +84,16 @@ section, article {
   border-right: 0;
   border-radius: 2%;
   transition: all 0.2s ease-in-out;
+}
+
+.bg-overlay {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/contact-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: #fff;
+  height: 700px;
+  padding-top: 50px;
 }
 
 /* Buttons */

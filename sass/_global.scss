@@ -18,11 +18,7 @@ body {
 
 /* ------------------ Sections ------------------ */
 section, article {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 50px;
-    flex-wrap: wrap;
+    @include flex-section-container;
 }
 
 .black-bg {

@@ -1,3 +1,18 @@
 $color1: #0c0e0c;
 $color2: #fff;
 $color3: #d8323c;
+
+@mixin flex-section-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px;
+    flex-wrap: wrap;
+}
+
+@mixin img-border-style {    
+    border: 5px solid $color3;
+    border-top: 0;
+    border-right: 0;
+    border-radius: 2%;
+}
