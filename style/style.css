@@ -1,3 +1,5 @@
+/* ------------------ Variables ------------------ */
+/* ------------------ Mixins ------------------ */
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400&display=swap");
 /* ------------------ Global Settings ------------------ */
 * {
@@ -98,11 +100,23 @@ section, article {
 
 /* Buttons */
 .btn-primary {
-  background-color: #d8323c !important;
-  color: #fff;
+  background-color: #0c0e0c !important;
   border: 0;
+  color: #fff;
 }
 .btn-primary:hover {
-  background-color: #d8323c !important;
   opacity: 0.8;
+}
+
+.cta {
+  background-color: #0c0e0c !important;
+  border: 0;
+  color: #fff;
+  border-radius: 30px;
+  border: 2px solid #fff;
+}
+.cta:active, .cta:hover {
+  background-color: #fff !important;
+  color: #d8323c;
+  border-color: #d8323c;
 }/*# sourceMappingURL=style.css.map */

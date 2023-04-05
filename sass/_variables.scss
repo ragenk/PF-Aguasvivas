@@ -1,7 +1,9 @@
+/* ------------------ Variables ------------------ */
 $color1: #0c0e0c;
 $color2: #fff;
 $color3: #d8323c;
 
+/* ------------------ Mixins ------------------ */
 @mixin flex-section-container {
     display: flex;
     justify-content: space-evenly;
@@ -15,4 +17,10 @@ $color3: #d8323c;
     border-top: 0;
     border-right: 0;
     border-radius: 2%;
+}
+
+@mixin btns-style {
+    background-color:$color1 !important;
+    border: 0;
+    color: $color2;
 }

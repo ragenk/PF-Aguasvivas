@@ -21,11 +21,19 @@
 
 /* Buttons */
 .btn-primary {
-    background-color:$color3 !important;
-    color: $color2;
-    border: 0;
+    @include btns-style;
         &:hover {
-            background-color: $color3 !important;
             opacity: 0.8;
         }
+}
+
+.cta {
+    @include btns-style;
+    border-radius: 30px;
+    border: 2px solid $color2;
+    &:active, &:hover {
+        background-color: $color2 !important;
+        color: $color3;
+        border-color: $color3;
+    }
 }
