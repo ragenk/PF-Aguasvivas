@@ -6,7 +6,7 @@
     .navbar-brand {
         margin-left: 1rem;
         color: $color3;
-        .navbar-brand > .navbar-brand:active, .navbar-brand:hover {    
+        &:active, &:hover {    
             color: $color2 !important;
             font-weight: 700 !important;
         }
