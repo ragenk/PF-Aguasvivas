@@ -10,45 +10,55 @@
 }
 
 .contact-overlay {
-    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("../img/contact-bg.jpg");
+    background-color: $color1;
     @include bg-overlay-properties;
 }
 
-.aboutme-overlay {    
+.bg-overlay {    
     background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("../img/aboutme-background.jpg");
     @include bg-overlay-properties;
 }
 
 /* Buttons */
-.btn-primary {
-    background-color:$color3 !important;
-    border: 0;
-    color: $color2;
-        &:hover {
-            opacity: 0.8;
-        }
-}
-
 .cta {
+    background-color: $color3;
     color: $color2;
-    border-radius: 30px;
-    border: 2px solid $color2;
-    background-color: $color1;
+    @include btn-style;
     &:active, &:hover {
         background-color: $color2;
         color: $color3;
-        border: 2px solid $color3;
+        transition: all 0.2s ease-in-out;
     }
 }
 
 .cta-active {
-    color: $color3;
-    border-radius: 30px;
-    border: 2px solid $color3;
     background-color: $color2;
+    color: $color3;
+    @include btn-style;
     &:active, &:hover {
-        background-color: $color1;
+        background-color: $color3;
         color: $color2;
-        border: 2px solid $color2;
+        transition: all 0.2s ease-in-out;
     }
+}
+
+/* ------------------ Grid Layout ------------------ */
+.grid-container {
+    display: grid;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-items: center;
+    padding: 50px;
+}
+
+.item-1 {
+    grid-row: 1 / 2;
+}
+
+.item-2 {
+    grid-row: 2 / 3;
+}
+
+.item-3 {
+    grid-row: 3 / 4;
 }

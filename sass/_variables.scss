@@ -2,6 +2,7 @@
 $color1: #0c0e0c;
 $color2: #fff;
 $color3: #d8323c;
+$color4: #ad3d5680;
 
 /* ------------------ Mixins ------------------ */
 @mixin flex-section-container {
@@ -26,4 +27,12 @@ $color3: #d8323c;
     color: $color2;
     height: 800px;
     padding-top: 50px;
+}
+
+@mixin btn-style {
+    text-decoration: none;
+    letter-spacing: -.05em;
+    padding: 0.5em 1em;
+    border-radius: 6px;
+    box-shadow: 0 10px 20px $color4,0 6px 6px $color4,0 0 100px -10px $color3;
 }

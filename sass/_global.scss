@@ -17,7 +17,7 @@ body {
 }
 
 /* ------------------ Sections ------------------ */
-section, article {
+section {
     @include flex-section-container;
 }
 

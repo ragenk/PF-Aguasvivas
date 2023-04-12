@@ -1,6 +1,6 @@
 /* Esta animación consiste en hacer un shake si lo que el usuario introduce es invalido (tambien se activa si el usuario borra todo). Los bordes son color rojo si no ha llenado todo, y color blanco cuando llena todo correctamente. 
 
-El uso de !importa fue necesario para sobreescribir el css de Bootstrap*/
+El uso de !important fue necesario para sobreescribir el css de Bootstrap*/
 
 input, textarea {
     background: transparent !important;
@@ -22,6 +22,14 @@ input, textarea {
     }
 }
 
+.left-img-animation {
+    animation: img-slide-left 1.5s;
+}
+
+.right-img-animation {
+    animation: img-slide-right 2s;
+}
+
 @keyframes shake {
     0% {
         translate: 0%;
@@ -34,5 +42,23 @@ input, textarea {
     }
     100% {
         translate: 0%;
+    }
+}
+
+@keyframes img-slide-left {
+    from {
+        transform: translateX(-400px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes img-slide-right {
+    from {
+        transform: translateX(400px);
+    }
+    to {
+        transform: translateX(0);
     }
 }
