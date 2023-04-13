@@ -19,6 +19,12 @@
     @include bg-overlay-properties;
 }
 
+@media (max-width: 767.98px) { 
+    .bg-overlay {
+        height: 1200px;
+    }
+}
+
 /* Buttons */
 .cta {
     background-color: $color3;

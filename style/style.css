@@ -109,6 +109,11 @@ section {
   padding-top: 50px;
 }
 
+@media (max-width: 767.98px) {
+  .bg-overlay {
+    height: 1200px;
+  }
+}
 /* Buttons */
 .cta {
   background-color: #d8323c;
